@@ -1,8 +1,8 @@
 /**Note:
  * Flyweight pattern shares existing object, which means it will make new object only if no more object "in stock".
- * This will save memory for over-creating new object again and again.
- * In this particular situation, juice will be consumed after been ordered, but it depends on the situation. Maybe
- * in other case object will not be consumed so it can be re-used rather than creating new.
+ * This will save memory for over-instantiating new objects again and again.
+ * In this particular situation, object(juice) will be consumed after been ordered, but it depends on the situation. 
+ * Maybe in other case object will not be consumed so it can be re-used rather than instantiating new.
  */
 package makebono.designpattern.structuralpattern.flyweightpattern;
 

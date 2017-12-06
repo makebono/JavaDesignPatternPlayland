@@ -1,7 +1,7 @@
 /**Note:
- * Chain of responsibility pattern is like a linked list. Each handler (or any shit in structure) has at most
- * one successor. A work signed to them and be passed handler by handler along the chain, until found one can
- * deal with it, or claim fail if no handler could help.
+ * Chain of responsibility pattern is like a linked list. Each handler (or any orther shit in structure) has
+ * at most one successor. A work signed to them and be passed handler by handler along the chain, until found
+ * the first handler which can deal with it, or claim fail if no handler could help.
  */
 package makebono.designpattern.behavioralpattern.interclasses.chainofresponsibilitypattern;
 

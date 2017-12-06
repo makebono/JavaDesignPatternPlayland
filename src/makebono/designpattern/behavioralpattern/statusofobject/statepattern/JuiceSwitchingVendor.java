@@ -1,5 +1,6 @@
 /**Note:
  * Straight forward pattern. Method varies depending on changing state. 
+ * In this situation, a juice vendor has 2 states, one for orange and one for apple.
  */
 package makebono.designpattern.behavioralpattern.statusofobject.statepattern;
 
@@ -9,7 +10,7 @@ import makebono.designpattern.tools.entities.intefaces.Juice;
 
 /** 
  * @ClassName: JuiceSwitchingVendor 
- * @Description: State pattern. A juice vendor with 2 states, one for orange and one for apple.
+ * @Description: State pattern. 
  * @author makebono
  * @date 2017年12月6日 下午2:46:11 
  *  

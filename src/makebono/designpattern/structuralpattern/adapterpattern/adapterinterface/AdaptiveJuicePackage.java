@@ -1,3 +1,7 @@
+/**Note:
+ * Adapter pattern extends ultilities to an already existing interface without modifying it. In this particular case
+ * a new method taste() is extended to Juice interface. 
+ */
 package makebono.designpattern.structuralpattern.adapterpattern.adapterinterface;
 
 /** 

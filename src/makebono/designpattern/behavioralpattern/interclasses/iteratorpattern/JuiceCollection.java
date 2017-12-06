@@ -1,3 +1,7 @@
+/**Note:
+ * Iterator pattern provide a way to traverse a collection of something. Without exposing its inner representation.
+ * A black box traversal as I prefer to say that.
+ */
 package makebono.designpattern.behavioralpattern.interclasses.iteratorpattern;
 
 import java.util.ArrayList;
@@ -7,8 +11,7 @@ import makebono.designpattern.tools.entities.intefaces.Juice;
 
 /** 
  * @ClassName: JuiceCollection 
- * @Description: Iterator pattern provide a way to traverse a collection of something. Without exposing 
- * its inner representation.
+ * @Description: Iterator pattern
  * @author makebono
  * @date 2017年12月6日 上午11:24:12 
  *  

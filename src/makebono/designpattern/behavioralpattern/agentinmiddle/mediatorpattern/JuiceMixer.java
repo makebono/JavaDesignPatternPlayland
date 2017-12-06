@@ -34,13 +34,13 @@ public class JuiceMixer {
         sb.append("Making mixed juice:\n    ");
 
         Juice cursor = this.ingredients.get(0);
-        String type = cursor.getClass().getName().substring(38);
+        String type = cursor.getClass().getSimpleName();
         int index = type.indexOf("J");
         sb.append(type.substring(0, index));
 
         for (int i = 1; i < this.ingredients.size(); i++) {
             cursor = this.ingredients.get(i);
-            type = cursor.getClass().getName().substring(38);
+            type = cursor.getClass().getSimpleName();
             index = type.indexOf("J");
             sb.append(" + " + type.substring(0, index));
         }

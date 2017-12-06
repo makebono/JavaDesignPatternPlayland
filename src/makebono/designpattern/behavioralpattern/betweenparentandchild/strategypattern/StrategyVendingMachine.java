@@ -1,7 +1,6 @@
 /**Note:
  * Strategy pattern offer same interface to different consumer, but gives different algorithm/method to them depends
- * on what they need.
- * In this case, two private class offer different Juices return relies on input String. 
+ * on what they need. In this case, two private class offer different Juices return relies on input String. 
  */
 package makebono.designpattern.behavioralpattern.betweenparentandchild.strategypattern;
 

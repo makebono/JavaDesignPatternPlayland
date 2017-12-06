@@ -1,3 +1,6 @@
+/**Note:
+ * Factory pattern provides a factory to instantiate new objects.
+ */
 package makebono.designpattern.creationalpattern.factorypattern;
 
 import makebono.designpattern.tools.entities.AppleJuice;
