@@ -1,7 +1,6 @@
 /**Note:
  * Gathering different interfaces/objects for more complicated 
  * combined interface/object.
- * 
  */
 package makebono.designpattern.structuralpattern.facadepattern;
 

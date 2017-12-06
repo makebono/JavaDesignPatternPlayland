@@ -1,6 +1,7 @@
 package makebono.designpattern.test;
 
-import makebono.designpattern.behavioralpattern.agentinmiddle.interpreterpattern.JuiceClassInterpreter;
+import makebono.designpattern.behavioralpattern.agentinmiddle.mediatorpattern.JuiceMixer;
+import makebono.designpattern.structuralpattern.decoratorpattern.GreatValueJuice;
 import makebono.designpattern.tools.entities.AppleJuice;
 import makebono.designpattern.tools.entities.OrangeJuice;
 import makebono.designpattern.tools.entities.intefaces.Juice;
@@ -13,13 +14,21 @@ import makebono.designpattern.tools.entities.intefaces.Juice;
  *  
  */
 public class Test {
-    public static void main(final String[] args) throws CloneNotSupportedException {
+    public static void main(final String[] args)
+            throws CloneNotSupportedException, InstantiationException, IllegalAccessException {
         final Juice j1 = new OrangeJuice();
         final Juice j2 = new AppleJuice();
+        final Juice j3 = new OrangeJuice();
+        final Juice j4 = new OrangeJuice();
+        final Juice j5 = new OrangeJuice();
+        final Juice j6 = new AppleJuice();
 
-        final JuiceClassInterpreter jci = new JuiceClassInterpreter();
+        final JuiceMixer jm = new JuiceMixer(j1, j2, j3, j4, j5, j6);
+        jm.mix();
 
-        System.out.println(jci.interpret(j1));
-        System.out.println(jci.interpret(j2));
+        final GreatValueJuice gvj = new GreatValueJuice(j1);
+
+        System.out.println(gvj.type());
+
     }
 }

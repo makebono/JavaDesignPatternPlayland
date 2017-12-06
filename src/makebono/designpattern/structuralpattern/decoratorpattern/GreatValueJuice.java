@@ -25,7 +25,7 @@ public class GreatValueJuice implements Juice {
         final StringBuilder sb = new StringBuilder();
 
         sb.append("I am a Great Value ");
-        final String type = this.juice.getClass().getName().substring(38);
+        final String type = this.juice.getClass().getSimpleName();
         final int space = type.indexOf('J');
         sb.append(type.substring(0, space) + " " + type.substring(space) + "\n");
         sb.append(this.juice.type());

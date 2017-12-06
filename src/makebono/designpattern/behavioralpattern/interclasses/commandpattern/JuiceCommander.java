@@ -1,6 +1,6 @@
 /**Note:
- * In command pattern, typically there are two kinds of classes: commander and executor.
- * Commander gives order to executor and executor deal with it. Everyone only care about
+ * In command pattern, typically there are two kinds of class: commander and executor.
+ * Commander gives order to executor and executor deals with it. Everyone only care about
  * its own duty.
  */
 package makebono.designpattern.behavioralpattern.interclasses.commandpattern;

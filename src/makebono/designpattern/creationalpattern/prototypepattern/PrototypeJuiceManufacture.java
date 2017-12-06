@@ -1,3 +1,6 @@
+/**Note:
+ * Prototype pattern clone a prototype for new objects. 
+ */
 package makebono.designpattern.creationalpattern.prototypepattern;
 
 import java.io.Serializable;
