@@ -1,6 +1,6 @@
 package makebono.designpattern.test;
 
-import makebono.designpattern.structuralpattern.facadepattern.BoxOfJuices;
+import makebono.designpattern.behavioralpattern.interclasses.observerpattern.JuiceWarehouse;
 
 /** 
  * @ClassName: Test 
@@ -11,9 +11,10 @@ import makebono.designpattern.structuralpattern.facadepattern.BoxOfJuices;
  */
 public class Test {
     public static void main(final String[] args) throws CloneNotSupportedException {
-        final BoxOfJuices boj = new BoxOfJuices();
-        System.out.println(boj.getAppleJuice().getClass().getName());
-        System.out.println(boj.getOrangeJuice().getClass().getName());
-        boj.openBox();
+        final JuiceWarehouse jw = new JuiceWarehouse();
+        jw.update("asd");
+        jw.update("OrangeJuice");
+        jw.update("AppleJuice");
+        jw.update("OrangeJuice");
     }
 }
