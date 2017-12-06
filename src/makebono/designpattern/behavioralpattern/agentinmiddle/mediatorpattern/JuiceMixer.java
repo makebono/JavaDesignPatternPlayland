@@ -1,7 +1,7 @@
 /**Note:
  * Mediator pattern. A mediator class provides manipulation on several different classes.
  */
-package makebono.designpattern.behavioralpattern.agentinmiddle.mediator;
+package makebono.designpattern.behavioralpattern.agentinmiddle.mediatorpattern;
 
 import java.util.ArrayList;
 
