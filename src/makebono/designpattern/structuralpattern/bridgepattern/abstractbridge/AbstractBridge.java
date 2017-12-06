@@ -1,3 +1,8 @@
+/**Note:
+ * Bridge pattern means using one interface to manipulate different types in same interface. It decouples abstraction from
+ * implementation to give them independency from each other. For here, use setJuice to decide which interface(type) to 
+ * dealing with. 
+ */
 package makebono.designpattern.structuralpattern.bridgepattern.abstractbridge;
 
 import makebono.designpattern.tools.entities.intefaces.Juice;
