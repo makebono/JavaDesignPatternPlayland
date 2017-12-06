@@ -1,8 +1,6 @@
 package makebono.designpattern.test;
 
-import java.util.ArrayList;
-
-import makebono.designpattern.behavioralpattern.interclasses.iteratorpattern.JuiceCollection;
+import makebono.designpattern.behavioralpattern.agentinmiddle.interpreterpattern.JuiceClassInterpreter;
 import makebono.designpattern.tools.entities.AppleJuice;
 import makebono.designpattern.tools.entities.OrangeJuice;
 import makebono.designpattern.tools.entities.intefaces.Juice;
@@ -16,14 +14,12 @@ import makebono.designpattern.tools.entities.intefaces.Juice;
  */
 public class Test {
     public static void main(final String[] args) throws CloneNotSupportedException {
-        final ArrayList<Juice> a = new ArrayList<Juice>();
-        a.add(new OrangeJuice());
-        a.add(new AppleJuice());
-        a.add(new OrangeJuice());
-        a.add(new AppleJuice());
-        a.add(new AppleJuice());
+        final Juice j1 = new OrangeJuice();
+        final Juice j2 = new AppleJuice();
 
-        final JuiceCollection jc = new JuiceCollection(a);
-        jc.traverse();
+        final JuiceClassInterpreter jci = new JuiceClassInterpreter();
+
+        System.out.println(jci.interpret(j1));
+        System.out.println(jci.interpret(j2));
     }
 }
