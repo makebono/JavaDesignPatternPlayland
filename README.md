@@ -6,6 +6,7 @@ Why does the term "23 types design patterns" sound like an idol unit?
 Anyway the pattern lays like below:
 
   -Creational pattern
+  
     1. Factory pattern
     2. Abstract factory pattern
     3. Builder pattern
@@ -13,6 +14,7 @@ Anyway the pattern lays like below:
     5. Singleton pattern
   
   -Structural pattern
+  
     6. Adapter pattern
     7. Bridge pattern
     8. Composite pattern
@@ -22,6 +24,7 @@ Anyway the pattern lays like below:
     12. Proxy pattern
   
   -Behavioral pattern
+  
     I. "Agent in middle" -- Access object through some kind of agent, mediator, etc.
       13. Interpreter pattern
       14. Mediator pattern
