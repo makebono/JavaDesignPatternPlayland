@@ -1,7 +1,10 @@
-# JavaDesignPatternPlayland
-Not quite familiar with this. Time for learning.
+# JavaPlayland
+This was only for design patterns. Now it is more than that. Some mechanisms I'm not quite
+familiar with will be put in here. A big wonderland for studying.
 
-Why does the term "23 types design patterns" sound like an idol unit?
+# Design patterns:
+
+Why does the term "23 types of design pattern" sound like an idol unit?
 
 Anyway the pattern lays like below:
 
@@ -45,3 +48,7 @@ Anyway the pattern lays like below:
       23. State pattern
       
 Even this Readme takes hella times to write. What the fudge.
+
+# Dynamic proxiesy
+
+Under construction.
