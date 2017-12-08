@@ -69,3 +69,13 @@ How to use the your written proxy handler:
                 juicer.getClass().getInterfaces(), proxy);
 
 And now the newJuice is ready to rock.
+
+# Reflection
+Everybody knows what is reflection. But as a reminder to myself, let me do a fast explain here again
+for good.
+
+Reflection is simply a mechanism that allows program to instatiates new object / modifies codes after
+compiling, or say at runtime. It hands the authority/ability to users for deciding what method or object
+to use while the program running. It's very important in AOP and Spring.
+
+It's nothing special but need to know how it works.
