@@ -1,6 +1,9 @@
 package com.makebono.javaplayland.test;
 
-import com.makebono.javaplayland.dynamicproxy.client.MakeJuice;
+import java.lang.reflect.InvocationTargetException;
+
+import com.makebono.javaplayland.reflection.BonoReflection;
+import com.makebono.javaplayland.tools.entities.ReflectOrangeJuice;
 
 /** 
  * @ClassName: Test 
@@ -11,8 +14,11 @@ import com.makebono.javaplayland.dynamicproxy.client.MakeJuice;
  */
 public class Test {
     public static void main(final String[] args)
-            throws CloneNotSupportedException, InstantiationException, IllegalAccessException {
+            throws CloneNotSupportedException, InstantiationException, IllegalAccessException, ClassNotFoundException,
+            NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
 
-        MakeJuice.make("Orange");
+        final ReflectOrangeJuice j = (ReflectOrangeJuice) BonoReflection
+                .instantiate("com.makebono.javaplayland.tools.entities.ReflectOrangeJuice", 10, "Bono");
+        j.yell();
     }
 }

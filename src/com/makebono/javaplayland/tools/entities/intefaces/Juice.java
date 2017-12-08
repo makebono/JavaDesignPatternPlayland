@@ -9,4 +9,6 @@ package com.makebono.javaplayland.tools.entities.intefaces;
  */
 public interface Juice {
     String type();
+
+    void init();
 }

@@ -14,4 +14,9 @@ public class AppleJuice implements Juice {
     public String type() {
         return "Cup of apple juice.";
     }
+
+    @Override
+    public void init() {
+        System.out.println("AppleJuice initialized.");
+    }
 }
