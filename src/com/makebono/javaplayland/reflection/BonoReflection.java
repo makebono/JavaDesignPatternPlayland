@@ -4,6 +4,7 @@
  * As well as two kinds of call method for non-parametric and parametric method call.  
  * 
  * Instruction:
+ * 
  *    final BonoReflection br = new BonoReflection("com.makebono.javaplayland.tools.entities.OrangeJuice");
  *    System.out.println(br.call("type"));
  *
@@ -12,6 +13,17 @@
 
  *    br2.call("yell");
  *    br2.call("advertise", "fantastic"); 
+ *    
+ * Lines above are equal with:
+ * 
+ *    final OrangeJuice oj = new OrangeJuice();
+ *    System.out.println(oj.type())
+ * 
+ *    final ReflectOrangeJuice roj = new ReflectOrangeJuice();
+ *    roj.init(10, "Bono");
+ *
+ *    roj.yell();
+ *    roj.advertise("fantastic");
  */
 package com.makebono.javaplayland.reflection;
 
