@@ -32,4 +32,7 @@ public class GreatValueJuice implements Juice {
         sb.append("\nI am great and cheap");
         return sb.toString();
     }
+
+    @Override
+    public void init() {}
 }

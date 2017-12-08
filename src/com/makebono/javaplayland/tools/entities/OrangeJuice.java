@@ -9,14 +9,14 @@ import com.makebono.javaplayland.tools.entities.intefaces.Juice;
  * @date 2017年12月5日 上午11:48:24 
  *  
  */
-public class OrangeJuice implements Juice, Cloneable {
+public class OrangeJuice implements Juice {
     @Override
     public String type() {
         return "Mega size orange juice, boo!";
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public void init() {
+        System.out.println("OrangeJuice initialized.");
     }
 }

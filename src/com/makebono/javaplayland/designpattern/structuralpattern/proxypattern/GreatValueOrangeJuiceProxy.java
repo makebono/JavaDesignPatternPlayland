@@ -29,4 +29,7 @@ public class GreatValueOrangeJuiceProxy implements Juice {
     public String brand() {
         return "Great Value";
     }
+
+    @Override
+    public void init() {}
 }
