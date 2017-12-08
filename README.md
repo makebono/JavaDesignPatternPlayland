@@ -3,7 +3,6 @@ This was only for design patterns. Now it is more than that. Some mechanisms I'm
 familiar with will be put in here. A big wonderland for studying.
 
 # Design patterns:
-
 Why does the term "23 types of design pattern" sound like an idol unit?
 
 Anyway the pattern lays like below:
@@ -49,6 +48,24 @@ Anyway the pattern lays like below:
       
 Even this Readme takes hella times to write. What the fudge.
 
-# Dynamic proxiesy
+# Dynamic proxy
+It's a lot differences between this and normal proxy implementation. So I created a new package 
+for it. 
 
-Under construction.
+A class named InvocationHandler in java is for dynamic proxy, You should implements it for the
+dynamic proxy call. 
+
+And a method invoke(Object proxy, Method method, Object[] args) must be over-written. As its name
+indicates, this method deals with the invoking of methods in the interface you want to cover with
+a proxy. But you don't need to call this method by hand.
+
+How to use the your written proxy handler:
+
+    final Juicer juicer = new BonoJuicer();
+    final ProxyService proxy = ProxyService.class.newInstance();
+    proxy.init((BonoJuicer) juicer);
+
+    final Juicer newJuice = (Juicer) Proxy.newProxyInstance(proxy.getClass().getClassLoader(),
+                juicer.getClass().getInterfaces(), proxy);
+
+And now the newJuice is ready to rock.
