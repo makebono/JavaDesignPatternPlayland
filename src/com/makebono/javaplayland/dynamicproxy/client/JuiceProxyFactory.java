@@ -21,8 +21,10 @@ public class JuiceProxyFactory {
         // A simple reflection here.
         final ProxyService proxy = ProxyService.class.newInstance();
 
-        // Actually don't even need to initialize the proxy.
-        // proxy.init((BonoJuicer) juicer);
+        // Need to initialize the object or it will eventually be directed to the 'stealth' call. Since without
+        // initiation, the object would be null so won't invoke a normal proxy call. As I'm using if (this.juice
+        // instanceof BonoJuicer) as conditional statement.
+        proxy.init((BonoJuicer) juicer);
 
         // newProxyInstance will get all the job done. As long as you have well defined them in the invoke() method and
         // relative methods.
