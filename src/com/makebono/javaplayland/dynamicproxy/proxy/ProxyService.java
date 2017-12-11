@@ -21,15 +21,9 @@ public class ProxyService implements InvocationHandler {
     }
     */
 
-    /* But there's no need to instatiate a proxy.
     public void init(final BonoJuicer juice) {
         this.juice = juice;
     }
-    
-    public void init(final StealthJuicer juice) {
-        this.juice = juice;
-    }
-    */
 
     @Override
     public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable {
