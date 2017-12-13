@@ -7,6 +7,7 @@ package com.makebono.javaplayland.tools.entities;
  * @date 2017年12月8日 上午11:29:42 
  *  
  */
+@SuppressWarnings("unused")
 public class ReflectOrangeJuice extends OrangeJuice {
     private int amount;
     private String receiver;
@@ -22,7 +23,8 @@ public class ReflectOrangeJuice extends OrangeJuice {
                 this.amount + " cup(s) of freshly squeezed orange juice for " + this.receiver + " from Marston!");
     }
 
-    public void advertise(final java.lang.String word) {
+    // Set as private to test force access.
+    private void advertise(final java.lang.String word) {
         System.out.println("What a " + word + " cup of orange juice!");
     }
 }
