@@ -2,7 +2,9 @@ package com.makebono.javaplayland.test;
 
 import java.lang.reflect.InvocationTargetException;
 
-import com.makebono.javaplayland.reflection.BonoReflection;
+import com.makebono.javaplayland.annotation.ClassFileAnnotation;
+import com.makebono.javaplayland.annotation.RuntimeAnnotation;
+import com.makebono.javaplayland.reflection.Demo;
 
 /** 
  * @ClassName: Test 
@@ -12,22 +14,21 @@ import com.makebono.javaplayland.reflection.BonoReflection;
  *  
  */
 public class Test {
+    @RuntimeAnnotation(bono2 = "GBJJ")
+    public void print() {
+        System.out.println("Take a deep Bono.");
+    }
+
+    @ClassFileAnnotation
+    public void print2() {
+        System.out.println("Take a deep Bono.");
+    }
+
     public static void main(final String[] args) throws CloneNotSupportedException, InstantiationException,
             IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException,
             IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
-        final BonoReflection br = new BonoReflection("com.makebono.javaplayland.tools.entities.OrangeJuice");
-        System.out.println(br.call("type"));
 
-        final BonoReflection br2 = new BonoReflection("com.makebono.javaplayland.tools.entities.ReflectOrangeJuice", 10,
-                "Bono");
+        Demo.show();
 
-        br2.call("yell");
-        br2.call("advertise", "fantastic");
-
-        Object o = br2.accessVariable("receiver");
-        System.out.println(o);
-        br2.setVariable("receiver", "Teru");
-        o = br2.accessVariable("receiver");
-        System.out.println(o);
     }
 }
