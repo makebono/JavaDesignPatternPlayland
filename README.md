@@ -59,7 +59,7 @@ And a method invoke(Object proxy, Method method, Object[] args) must be over-wri
 indicates, this method deals with the invoking of methods in the interface you want to cover with
 a proxy. But you don't need to call this method by hand.
 
-How to use the your written proxy handler:
+How to use your written proxy handler:
 
     final Juicer juicer = new BonoJuicer();
     final ProxyService proxy = ProxyService.class.newInstance();
