@@ -12,6 +12,7 @@ import java.lang.reflect.ParameterizedType;
  * @date 2018年1月2日 下午3:45:01 
  *  
  */
+@SuppressWarnings(value = { "unused" })
 public class Demo {
     final String str = "An anonymous class can access variables of its enclosing class. It must be defined as static for directly accessing from anonymous class.";
     final static String str2 = "An anonymous class can access static variables of its enclosing class";
