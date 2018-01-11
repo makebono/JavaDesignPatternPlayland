@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 
 import com.makebono.javaplayland.annotation.ClassFileAnnotation;
 import com.makebono.javaplayland.annotation.RuntimeAnnotation;
-import com.makebono.javaplayland.reflection.Demo;
+import com.makebono.javaplayland.enumeration.IowaClass;
 
 /** 
  * @ClassName: Test 
@@ -27,8 +27,10 @@ public class Test {
     public static void main(final String[] args) throws CloneNotSupportedException, InstantiationException,
             IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException,
             IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
-
-        Demo.show();
-
+        IowaClass.Iowa.info();
+        IowaClass.NewJersey.info();
+        IowaClass.Missouri.info();
+        IowaClass.Wisconsin.info();
     }
+
 }
