@@ -4,7 +4,9 @@ import java.lang.reflect.InvocationTargetException;
 
 import com.makebono.javaplayland.annotation.ClassFileAnnotation;
 import com.makebono.javaplayland.annotation.RuntimeAnnotation;
-import com.makebono.javaplayland.enumeration.IowaClass;
+import com.makebono.javaplayland.innerclasstest.JuiceEX;
+import com.makebono.javaplayland.innerclasstest.testinterface.BrandTitle;
+import com.makebono.javaplayland.innerclasstest.testinterface.JuicePackage;
 
 /** 
  * @ClassName: Test 
@@ -27,10 +29,16 @@ public class Test {
     public static void main(final String[] args) throws CloneNotSupportedException, InstantiationException,
             IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException,
             IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
-        IowaClass.Iowa.info();
-        IowaClass.NewJersey.info();
-        IowaClass.Missouri.info();
-        IowaClass.Wisconsin.info();
+        final JuiceEX jex = new JuiceEX();
+        final JuicePackage jp = jex.pack();
+        final BrandTitle bt = jex.title();
+        // final JuiceEX.info info = new JuiceEX.info(); <- Illegal.
+        final JuiceEX.info info = jex.new info();
+
+        System.out.println(jex);
+        System.out.println(jp.color());
+        System.out.println(bt.font());
+        info.printInfo();
     }
 
 }
