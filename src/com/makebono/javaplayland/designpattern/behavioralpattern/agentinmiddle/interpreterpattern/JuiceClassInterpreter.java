@@ -1,5 +1,5 @@
 /**Note:
- * Interpreter pattern, interpret something into something else. In this case, it reads a juice class and return its
+ * Interpreter pattern, interpret something into something else. In this case, it reads a juice object and return its
  * name in natural English format.
  * 
  * For example:

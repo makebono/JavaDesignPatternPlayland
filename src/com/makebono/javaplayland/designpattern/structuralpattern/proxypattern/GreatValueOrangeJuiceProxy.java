@@ -1,6 +1,7 @@
 /**Note:
  * Different from decorator, proxy pattern does not have to provide same interface as its target. 
- * It gives access to orginal target. Decorator pattern modifies method of original target, keeping same interface.
+ * It gives access to orginal target. Not like decorator pattern as it modifying methods of original target as well as 
+ * keeping same interface.
  */
 package com.makebono.javaplayland.designpattern.structuralpattern.proxypattern;
 

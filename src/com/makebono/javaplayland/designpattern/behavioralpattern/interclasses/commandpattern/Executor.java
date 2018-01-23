@@ -24,7 +24,7 @@ public class Executor {
             work = new AppleJuice();
             System.out.println(work.type());
         } else {
-            System.out.println("Boss, I can give you " + task + ". But here's an orange juice for you.");
+            System.out.println("Boss, I cannot give you " + task + ". But here's an orange juice for you.");
             work = new OrangeJuice();
             System.out.println(work.type());
         }

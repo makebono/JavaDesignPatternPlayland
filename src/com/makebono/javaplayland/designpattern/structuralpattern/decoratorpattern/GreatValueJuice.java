@@ -1,5 +1,5 @@
 /**Note:
- * Decorator pattern would keep the original Interface as well as adding new utility to an object under that
+ * Decorator pattern would keep the original Interface as well as adding new utility to the methods under that
  * interface.
  */
 package com.makebono.javaplayland.designpattern.structuralpattern.decoratorpattern;

@@ -2,7 +2,7 @@ package com.makebono.javaplayland.designpattern.behavioralpattern.agentinmiddle.
 
 /** 
  * @ClassName: PlaceForVisit 
- * @Description: Visitor pattern, a place accepts visitor to visite.
+ * @Description: Visitor pattern, a place accepts visitor to visit.
  * @author makebono
  * @date 2017年12月6日 下午3:03:48 
  *  
