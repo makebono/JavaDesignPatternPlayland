@@ -4,14 +4,14 @@ import com.makebono.javaplayland.innerclasstest.testinterface.BrandTitle;
 import com.makebono.javaplayland.innerclasstest.testinterface.JuicePackage;
 
 /** 
- * @ClassName: Demo 
+ * @ClassName: InnerClassDemo 
  * @Description: A demo for inner class related stuffs.
  * @author makebono
  * @date 2018年1月16日 上午10:27:43 
  *  
  */
-public class Demo {
-    public static void main(final String args[]) {
+public class InnerClassDemo {
+    public static void show() {
         final JuiceEX jex = new JuiceEX();
 
         // JuicePackage jp = jex.new juicePackage(); <- Of course, access to private class would be rejected.

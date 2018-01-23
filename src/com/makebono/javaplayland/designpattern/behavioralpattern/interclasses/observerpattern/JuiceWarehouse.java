@@ -1,5 +1,5 @@
 /**Note:
- * Observer pattern has subjects and observer. Subject has responsibilities to notify the changes to observer.
+ * Observer pattern has subjects and observers. Subject has responsibilities to notify the changes to observer.
  * Observer has responsibilities to observe the changes. 
  */
 package com.makebono.javaplayland.designpattern.behavioralpattern.interclasses.observerpattern;

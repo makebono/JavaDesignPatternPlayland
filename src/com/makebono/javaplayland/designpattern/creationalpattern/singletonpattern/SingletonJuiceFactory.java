@@ -1,5 +1,5 @@
 /**Note:
- * Obviously, the factory inside will only be instantiate during compilling since its static. So this factory is unique.
+ * Obviously, the factory inside will only be instantiated during compilling since it's static. So this factory is unique.
  * It can be easily observed by following:
  *     final SingletonJuiceFactory sjf = new SingletonJuiceFactory();
  *     final SingletonJuiceFactory sjf2 = new SingletonJuiceFactory();        
@@ -8,7 +8,7 @@
  *  Ouput: true
  * 
  * So what does singleton pattern do is, to make sure an object's uniqueness. This unique object can only be created once
- * thus memory wasting on redundant instantiation would not happen. Sometime one object is perfect enough for using.
+ * thus memory wasting on redundant instantiation would not happen. Sometime A object is perfect enough for using.
  */
 package com.makebono.javaplayland.designpattern.creationalpattern.singletonpattern;
 
@@ -18,12 +18,13 @@ import com.makebono.javaplayland.tools.entities.intefaces.Juice;
 
 /** 
  * @ClassName: SingletonJuiceFactory 
- * @Description: This is the Alpha, this is the Omega. This is last JuiceFactory of its kind. It is singleton pattern. 
+ * @Description: This is the Alpha, this is the Omega. This is last JuiceFactory of its kind. This is the singleton pattern. 
  * @author makebono
  * @date 2017年12月5日 下午1:47:18 
  *  
  */
 public class SingletonJuiceFactory {
+    // An empty constructor blocks any attempt for creating new JuiceFactory. Important to has it.
     public SingletonJuiceFactory() {}
 
     private static class singletonjuicefactory {

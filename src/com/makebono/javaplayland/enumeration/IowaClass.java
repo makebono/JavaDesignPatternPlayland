@@ -6,7 +6,7 @@ import java.util.Map;
 
 /** 
  * @ClassName: IowaClass
- * @Description: Enumeration show casing
+ * @Description: Enumeration show case
  * @author makebono
  * @date 2018年1月11日 上午10:55:36 
  *  
