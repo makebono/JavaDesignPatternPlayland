@@ -5,7 +5,7 @@
  */
 package com.makebono.javaplayland.designpattern.behavioralpattern.betweenparentandchild.templatemethodpattern.abstracttemplate;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: VendingTemplate 

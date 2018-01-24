@@ -1,6 +1,6 @@
 package com.makebono.javaplayland.tools.entities;
 
-import com.makebono.javaplayland.tools.entities.intefaces.PrototypeJuice;
+import com.makebono.javaplayland.tools.entities.interfaces.PrototypeJuice;
 
 /** 
  * @ClassName: PrototypeOrangeJuice 

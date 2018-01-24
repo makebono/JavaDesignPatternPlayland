@@ -2,7 +2,7 @@ package com.makebono.javaplayland.designpattern.creationalpattern.abstractfactor
 
 import com.makebono.javaplayland.designpattern.creationalpattern.abstractfactorypattern.factoryinterface.AbstractJuiceFactory;
 import com.makebono.javaplayland.tools.entities.AppleJuice;
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: AppleJuiceFactory 

@@ -4,8 +4,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
-import java.util.function.Predicate;
+import java.util.function.Function;
 import java.util.stream.Stream;
+
+import com.makebono.javaplayland.tools.entities.Destroyer;
+import com.makebono.javaplayland.tools.entities.interfaces.BonoFunctionalInterface;
+import com.makebono.javaplayland.tools.entities.interfaces.NonParameterizedMethodInterface;
 
 /** 
  * @ClassName: LambdaDemo 
@@ -34,7 +38,7 @@ public class LambdaDemo {
 
             System.out.print("\nImplementing self-defined parameterized functional interface:\n    ");
             // Implements a self-defined functional interface
-            final bonoFunctionalInterface bfi = (x, y) -> {
+            final BonoFunctionalInterface bfi = (x, y) -> {
                 System.out.println(x + " from " + y + ".");
             };
 
@@ -42,7 +46,7 @@ public class LambdaDemo {
 
             System.out.print("\nImplementing self-defined non-parameterized functional interface:\n    ");
             // () for non parameterized method
-            final nonParameterizedMethodInterface npi = () -> {
+            final NonParameterizedMethodInterface npi = () -> {
                 System.out.println("I don't take parameters.");
             };
 
@@ -107,57 +111,12 @@ public class LambdaDemo {
                     new Destroyer(1, "Fubuki", "Special Type-I class"));
 
             stream.filter(Destroyer.isLeadShip()).forEach(x -> System.out.print(x + "\n    "));
+
+            // Lambda way to invoke a method, used above in the sorting part but it would be nice to list it out clearly
+            // here.
+            final Destroyer kamikaze = new Destroyer(1, "Kamikaze", "Kamikaze class");
+            final Function<Destroyer, String> getName = Destroyer::getName;
+            System.out.println("\nUse lambda expression to invoke method\n    " + getName.apply(kamikaze));
         }
-    }
-}
-
-@FunctionalInterface
-interface bonoFunctionalInterface {
-    void bo(String str1, String str2);
-}
-
-@FunctionalInterface
-interface nonParameterizedMethodInterface {
-    void play();
-}
-
-class Destroyer implements Comparable<Destroyer> {
-    private final int hullNo;
-    private final String name;
-    private final String clazz;
-
-    public Destroyer(final int hullNo, final String name, final String clazz) {
-        this.hullNo = hullNo;
-        this.name = name;
-        this.clazz = clazz;
-    }
-
-    // Could be used in Stream.filter(Predicate predicate).
-    public static Predicate<Destroyer> isLeadShip() {
-        return x -> x.getHullNo() == 1;
-    }
-
-    public int getHullNo() {
-        return hullNo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "(LJN destroyer, " + this.clazz
-                + (this.hullNo == 1 ? (". Class leader ") : (", Hull#" + this.hullNo + " ")) + this.name + ")";
-    }
-
-    @Override
-    public int compareTo(final Destroyer o) {
-        if (this.hullNo > o.hullNo) {
-            return 1;
-        } else if (this.hullNo < o.hullNo) {
-            return -1;
-        }
-        return 0;
     }
 }

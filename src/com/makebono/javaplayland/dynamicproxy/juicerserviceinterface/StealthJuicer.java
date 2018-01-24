@@ -1,6 +1,6 @@
 package com.makebono.javaplayland.dynamicproxy.juicerserviceinterface;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: StealthJuicer 

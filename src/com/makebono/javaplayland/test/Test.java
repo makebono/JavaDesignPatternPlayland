@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 
 import com.makebono.javaplayland.annotation.ClassFileAnnotation;
 import com.makebono.javaplayland.annotation.RuntimeAnnotation;
-import com.makebono.javaplayland.lambdaexpressions.LambdaDemo;
+import com.makebono.javaplayland.optionalnullchecker.OptionalDemo;
 
 /** 
  * @ClassName: Test 
@@ -27,7 +27,9 @@ public class Test {
     public static void main(final String[] args) throws CloneNotSupportedException, InstantiationException,
             IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException,
             IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
-        LambdaDemo.show();
+
+        OptionalDemo.show();
+
     }
 
 }

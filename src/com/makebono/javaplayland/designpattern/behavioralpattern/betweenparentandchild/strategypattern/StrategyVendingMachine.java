@@ -7,7 +7,7 @@ package com.makebono.javaplayland.designpattern.behavioralpattern.betweenparenta
 import com.makebono.javaplayland.designpattern.behavioralpattern.betweenparentandchild.strategypattern.strategyinterface.StrategyJuiceVendor;
 import com.makebono.javaplayland.tools.entities.AppleJuice;
 import com.makebono.javaplayland.tools.entities.OrangeJuice;
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: StrategyVendingMachine 

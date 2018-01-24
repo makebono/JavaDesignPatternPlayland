@@ -2,7 +2,7 @@ package com.makebono.javaplayland.designpattern.behavioralpattern.betweenparenta
 
 import com.makebono.javaplayland.designpattern.behavioralpattern.betweenparentandchild.templatemethodpattern.abstracttemplate.VendingTemplate;
 import com.makebono.javaplayland.tools.entities.AppleJuice;
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: TemplateBuyAppleJuice 
