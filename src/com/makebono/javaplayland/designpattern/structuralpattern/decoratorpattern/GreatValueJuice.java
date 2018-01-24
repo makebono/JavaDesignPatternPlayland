@@ -4,7 +4,7 @@
  */
 package com.makebono.javaplayland.designpattern.structuralpattern.decoratorpattern;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: GreatValueJuice 

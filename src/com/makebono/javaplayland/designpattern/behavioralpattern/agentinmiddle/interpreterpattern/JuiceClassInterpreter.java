@@ -8,7 +8,7 @@
  */
 package com.makebono.javaplayland.designpattern.behavioralpattern.agentinmiddle.interpreterpattern;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: JuiceInterpreter 

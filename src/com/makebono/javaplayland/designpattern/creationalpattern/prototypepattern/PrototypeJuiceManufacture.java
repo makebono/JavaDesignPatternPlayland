@@ -5,8 +5,8 @@ package com.makebono.javaplayland.designpattern.creationalpattern.prototypepatte
 
 import java.io.Serializable;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
-import com.makebono.javaplayland.tools.entities.intefaces.PrototypeJuice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.PrototypeJuice;;
 
 /** 
  * @ClassName: PrototypeJuiceManufacture 

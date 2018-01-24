@@ -5,7 +5,7 @@ package com.makebono.javaplayland.designpattern.behavioralpattern.agentinmiddle.
 
 import java.util.ArrayList;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: JuiceMixer 

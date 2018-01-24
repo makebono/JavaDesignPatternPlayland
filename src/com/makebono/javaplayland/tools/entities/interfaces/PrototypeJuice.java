@@ -1,4 +1,4 @@
-package com.makebono.javaplayland.tools.entities.intefaces;
+package com.makebono.javaplayland.tools.entities.interfaces;
 
 /** 
  * @ClassName: PrototypeJuice 

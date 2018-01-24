@@ -4,7 +4,7 @@
  */
 package com.makebono.javaplayland.designpattern.creationalpattern.abstractfactorypattern.factoryinterface;
 
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: AbstractJuiceFactory 

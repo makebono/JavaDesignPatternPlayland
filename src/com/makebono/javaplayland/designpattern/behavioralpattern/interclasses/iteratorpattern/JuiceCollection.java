@@ -7,7 +7,7 @@ package com.makebono.javaplayland.designpattern.behavioralpattern.interclasses.i
 import java.util.ArrayList;
 
 import com.makebono.javaplayland.designpattern.behavioralpattern.interclasses.iteratorpattern.iterator.MyIterator;
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: JuiceCollection 

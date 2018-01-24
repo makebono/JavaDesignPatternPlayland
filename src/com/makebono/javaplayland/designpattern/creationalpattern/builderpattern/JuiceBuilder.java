@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import com.makebono.javaplayland.tools.entities.AppleJuice;
 import com.makebono.javaplayland.tools.entities.OrangeJuice;
-import com.makebono.javaplayland.tools.entities.intefaces.Juice;
+import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: JuiceBuilder 
