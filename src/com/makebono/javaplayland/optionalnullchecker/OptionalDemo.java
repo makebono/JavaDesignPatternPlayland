@@ -7,7 +7,7 @@ import com.makebono.javaplayland.tools.entities.Destroyer;
 
 /** 
  * @ClassName: OptionalDemo 
- * @Description: Explore the hell out of Optional class
+ * @Description: Explore the hell out of Optional class. Should consider to use it as returning value for erasing NullPointerException.
  * @author makebono
  * @date 2018年1月24日 上午9:00:21 
  *  
@@ -57,8 +57,8 @@ public class OptionalDemo {
         final Destroyer empty = null;
         final Destroyer u_chan = new Destroyer(4, "Uzuki", "Mutsuki class");
         final Destroyer mocchi = new Destroyer(11, "Mochizuki", "Mutsuki class");
-        System.out.print("Empty value: Integer empty = null\n    ");
-        System.out.print("Non-empty value: Integer nonEmpty = Uzuki\n    ");
+        System.out.print("Empty value: 'Destroyer empty' = null\n    ");
+        System.out.print("Non-empty value: 'Destroyer nonEmpty' = Uzuki\n    ");
         System.out.print("Default value = Mochizuki\n");
         System.out.print("\n        Handling empty: " + defaultValueAssignment(empty, mocchi));
         System.out.println("\n        Handling nonEmpty: " + defaultValueAssignment(u_chan, mocchi));
@@ -68,6 +68,11 @@ public class OptionalDemo {
         final Destroyer kisaragi_san = new Destroyer(2, "Kisaragi", "Mutsuki class");
         System.out.print("Before handled by .filter() and .map(): " + kisaragi_san);
         System.out.print("\n    After handling: " + translateFilterHandler(kisaragi_san, "Kisaragi", "如月", "睦月型"));
+
+        System.out
+                .print("\n\nOptional class has a global private static EMPTY value, could only be accessed by 'Optional.empty().'\n    Empty value: "
+                        + Optional.empty());
+
     }
 
     public static Destroyer defaultValueAssignment(final Destroyer input, final Destroyer defaultValue) {

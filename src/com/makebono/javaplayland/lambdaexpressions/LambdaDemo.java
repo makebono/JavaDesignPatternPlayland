@@ -1,6 +1,7 @@
 package com.makebono.javaplayland.lambdaexpressions;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -73,7 +74,13 @@ public class LambdaDemo {
                     new Destroyer(2, "Hibiki", "Special Type-III class") };
 
             System.out.println("Array before sorting:\n    " + Arrays.toString(destroyer));
-            Arrays.sort(destroyer, Destroyer::compareTo);
+            // Parse your onw defined comparator in.
+            // Arrays.sort(destroyer, Destroyer::compareTo);
+
+            // Comparator supports lambda typing, this is easier because you don't need to write a customized comparator
+            // any more.
+            Arrays.sort(destroyer, Comparator.comparing(x -> x.getName()));
+
             System.out.println("Array after sorting:\n    " + Arrays.toString(destroyer));
 
             System.out.println("\nArray sorting by lambda expression with anonymous method.");

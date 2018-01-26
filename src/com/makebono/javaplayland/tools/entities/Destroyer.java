@@ -57,7 +57,8 @@ public class Destroyer implements Comparable<Destroyer> {
     @Override
     public String toString() {
         return translated
-                ? ("(帝国海軍" + this.clazz + "駆逐艦" + (this.hullNo == 1 ? ("旗") : (this.hullNo + "番艦") + this.name + ")"))
+                ? ("(帝国海軍" + this.clazz + "駆逐艦"
+                        + ((this.hullNo == 1 ? ("旗艦") : (this.hullNo + "番艦")) + this.name + ")"))
                 : "(LJN destroyer, " + this.clazz
                         + (this.hullNo == 1 ? (". Class leader ") : (", Hull#" + this.hullNo + " ")) + this.name + ")";
     }
