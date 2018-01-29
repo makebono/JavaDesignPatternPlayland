@@ -1,5 +1,6 @@
 package com.makebono.javaplayland.test;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
 import com.makebono.javaplayland.annotation.ClassFileAnnotation;
@@ -26,10 +27,8 @@ public class Test {
 
     public static void main(final String[] args) throws CloneNotSupportedException, InstantiationException,
             IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException,
-            IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
-
+            IllegalArgumentException, InvocationTargetException, NoSuchFieldException, IOException {
         OptionalDemo.show();
-
     }
 
 }
