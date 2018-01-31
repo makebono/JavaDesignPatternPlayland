@@ -47,8 +47,9 @@ public class LambdaDemo {
 
             System.out.print("\nImplementing self-defined non-parameterized functional interface:\n    ");
             // () for non parameterized method
+            final String str = "I don't take parameters. But I can access variables in context.";
             final NonParameterizedMethodInterface npi = () -> {
-                System.out.println("I don't take parameters.");
+                System.out.println(str);
             };
 
             npi.play();
