@@ -9,6 +9,9 @@
  * 
  * So what does singleton pattern do is, to make sure an object's uniqueness. This unique object can only be created once
  * thus memory wasting on redundant instantiation would not happen. Sometime A object is perfect enough for using.
+ * 
+ * But now I change the non-parameterized constructor to private for blocking new instance. So this test is already 
+ * deprecated. But need to understand the idea.
  */
 package com.makebono.javaplayland.designpattern.creationalpattern.singletonpattern;
 
