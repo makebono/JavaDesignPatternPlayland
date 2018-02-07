@@ -18,14 +18,14 @@ import com.makebono.javaplayland.tools.entities.interfaces.Juice;
 
 /** 
  * @ClassName: SingletonJuiceFactory 
- * @Description: This is the Alpha, this is the Omega. This is last JuiceFactory of its kind. This is the singleton pattern. 
+ * @Description: This is the Alpha, this is the Omega. This is the last JuiceFactory of its kind. This is the singleton pattern. 
  * @author makebono
  * @date 2017年12月5日 下午1:47:18 
  *  
  */
 public class SingletonJuiceFactory {
-    // An empty constructor blocks any attempt for creating new JuiceFactory. Important to has it.
-    public SingletonJuiceFactory() {}
+    // An empty constructor blocks any attempt for creating new JuiceFactory. Important to have it.
+    private SingletonJuiceFactory() {}
 
     private static class singletonjuicefactory {
         private static SingletonJuiceFactory factory = new SingletonJuiceFactory();
@@ -40,10 +40,18 @@ public class SingletonJuiceFactory {
     }
 
     public Juice produceOrangeJuice() {
-        return new OrangeJuice();
+        return accessFactory().produceOrangeJuiceImpl();
     }
 
     public Juice produceAppleJuice() {
+        return accessFactory().produceAppleJuiceImpl();
+    }
+
+    private Juice produceOrangeJuiceImpl() {
+        return new OrangeJuice();
+    }
+
+    private Juice produceAppleJuiceImpl() {
         return new AppleJuice();
     }
 }
