@@ -47,4 +47,8 @@ public class BonoReader {
             return null;
         }
     }
+    
+    public StringBuilder getReadContent(){
+    	return this.readContent;
+    }
 }
