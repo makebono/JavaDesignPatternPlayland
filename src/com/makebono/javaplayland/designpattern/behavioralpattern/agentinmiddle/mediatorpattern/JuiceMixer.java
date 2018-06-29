@@ -1,5 +1,5 @@
 /**Note:
- * Mediator pattern. A mediator class provides manipulation on several different classes.
+ * Mediator pattern. A mediator class provides manipulation/interaction on/between several different classes.
  */
 package com.makebono.javaplayland.designpattern.behavioralpattern.agentinmiddle.mediatorpattern;
 
